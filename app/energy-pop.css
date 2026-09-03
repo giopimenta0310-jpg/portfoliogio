@@ -1,0 +1,43 @@
+.rd{--pink:#f29ac2;--coral:#ed5f67;--burgundy:#6b1738;--lilac:#d9a6cf;--spark:#f4c95d}
+
+.rdHeaderCta,.rdHeroContent>div a:first-child,.rdIntroCopy>a,.rdWhyCopy>a,.rdContact button{transition:transform .25s ease,box-shadow .25s ease;background:var(--coral)}
+.rdHeaderCta:hover,.rdHeroContent>div a:first-child:hover,.rdIntroCopy>a:hover,.rdWhyCopy>a:hover,.rdContact button:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--pink)}
+
+.rdHeroTexture{background:radial-gradient(circle at 28% 24%,rgba(237,95,103,.2),transparent 25%),radial-gradient(circle at 72% 62%,rgba(242,154,194,.18),transparent 26%),radial-gradient(circle at 50% 42%,rgba(107,23,56,.72),transparent 42%),repeating-linear-gradient(110deg,transparent 0 12px,rgba(246,240,232,.018) 13px 14px)}
+.rdHero h1 em{color:var(--pink);position:relative;text-shadow:0 0 35px rgba(242,154,194,.2)}
+.rdHero h1 em::after{content:'';position:absolute;height:7px;left:4%;right:2%;bottom:-8px;background:var(--coral);border-radius:100%;transform:rotate(-1deg)}
+.rdHeroMark{color:rgba(242,154,194,.06)}
+.rdSpark{color:var(--spark);filter:drop-shadow(0 0 18px rgba(244,201,93,.35))}
+
+.rdIntro{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--bg) 0 72%,rgba(242,154,194,.22) 72% 100%)}
+.rdIntro::before{content:'✦';position:absolute;right:5vw;top:45px;color:var(--coral);font-size:58px;transform:rotate(12deg)}
+.rdIntro::after{content:'';position:absolute;width:105px;height:105px;border:22px solid var(--pink);border-radius:50%;right:-40px;bottom:45px;opacity:.8}
+.rdPhoto{background:linear-gradient(145deg,var(--pink),#d7a6a0);box-shadow:-14px 14px 0 var(--burgundy)}
+.rdPhoto i{background:var(--spark);color:var(--dark)}
+.rdTags span:nth-child(2n+1){background:var(--pink);border-color:var(--pink)}
+.rdTags span:nth-child(2n){border-color:var(--coral);color:var(--burgundy)}
+
+.rdServiceShowcase::before{content:'';position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(107,23,56,.8);filter:blur(80px);right:-190px;top:-170px;pointer-events:none}
+.rdServiceHead,.rdServiceTrack{position:relative;z-index:1}
+.rdServiceHead .rdPill{background:var(--pink);color:var(--dark)}
+.rdArrows button{border-color:var(--pink)}
+.rdArrows button:hover{background:var(--coral);border-color:var(--coral);color:white}
+.rdServiceCard{background:#f8eee7;box-shadow:0 16px 32px rgba(0,0,0,.17)}
+.rdServiceCard:nth-child(4n+2){background:var(--pink)}
+.rdServiceCard:nth-child(4n+3){background:var(--spark)}
+.rdServiceCard:nth-child(4n+4){background:#d7a6cf}
+.rdServiceCard.active{box-shadow:0 32px 75px rgba(0,0,0,.4),0 0 0 4px var(--coral)}
+.rdCardVisual{background:linear-gradient(145deg,var(--burgundy),#9d2853)}
+.rdServiceCard:nth-child(4n+3) .rdCardVisual{background:linear-gradient(145deg,#242024,var(--burgundy))}
+.rdOpen{color:var(--burgundy)}
+
+.rdWhyVisual{background:linear-gradient(145deg,var(--coral),#c72e57)}
+.rdVertical{background:var(--spark)}
+.rdWhyCopy li b{color:var(--coral);font-weight:800}
+.rdQuote em,.rdContact h2 em,.rdFooter p{color:var(--pink)}
+.rdContact{background:linear-gradient(135deg,var(--burgundy),#3f1026)}
+.rdContact form{box-shadow:14px 14px 0 var(--pink)}
+
+@media(max-width:800px){.rdHero h1 em::after{height:4px;bottom:-5px}.rdIntro{background:linear-gradient(160deg,var(--bg) 0 82%,rgba(242,154,194,.24) 82%)}.rdIntro::before{right:18px;top:30px;font-size:40px}.rdPhoto{box-shadow:-8px 8px 0 var(--burgundy)}.rdContact form{box-shadow:7px 7px 0 var(--pink)}}
+
+@media(prefers-reduced-motion:reduce){.rdHeaderCta,.rdHeroContent>div a:first-child,.rdIntroCopy>a,.rdWhyCopy>a,.rdContact button{transition:none}}

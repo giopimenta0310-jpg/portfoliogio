@@ -1,0 +1,13 @@
+.rdFaqIntro{max-width:660px;margin:20px auto 0;text-align:center;font-size:14px;line-height:1.75;color:#62575c}
+.rdFaq>div{max-width:900px;margin-inline:auto}
+
+.rdContact{grid-template-columns:1fr;gap:56px;text-align:center;padding-inline:clamp(24px,8vw,140px)}
+.rdContact>div{max-width:900px;margin:0 auto}
+.rdContact h2{margin:24px 0 22px;font-size:clamp(54px,6.7vw,96px);line-height:.9}
+.rdContact>div>p{max-width:590px;margin:0 auto;font-size:14px;line-height:1.75;color:#eadde3}
+.rdContact form{width:min(940px,100%);margin:0 auto;text-align:left;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:34px;row-gap:24px;padding:clamp(34px,5vw,62px)}
+.rdContact form label:nth-of-type(9),.rdContact form>button,.rdContact form>p{grid-column:1/-1}
+.rdContact textarea{min-height:92px;resize:vertical}
+.rdContact form>button{width:max-content;min-width:320px;justify-self:center;padding:16px 28px}
+
+@media(max-width:700px){.rdFaqIntro{text-align:left}.rdContact{gap:40px;padding-inline:18px}.rdContact h2{font-size:clamp(48px,14vw,68px)}.rdContact form{grid-template-columns:1fr;padding:30px 22px;row-gap:22px}.rdContact form label:nth-of-type(9),.rdContact form>button,.rdContact form>p{grid-column:1}.rdContact form>button{width:100%;min-width:0}}

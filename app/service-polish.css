@@ -1,0 +1,12 @@
+.rdServiceHead{align-items:center}.rdServiceTrack{padding-top:60px;padding-bottom:60px}.rdServiceCard{min-height:500px;padding:20px 22px 22px}.rdServiceCard::after{display:none}.rdCardVisual{height:145px;margin:18px 0}.rdCardVisual b{font-size:108px}.rdServiceCard h3{font-size:29px;margin:4px 0 10px}.rdServiceCard>p{font-size:11px;line-height:1.55;margin:0}.rdCardFooter{margin-top:auto;padding-top:18px;border-top:1px solid rgba(0,0,0,.2);display:flex;align-items:end;justify-content:space-between;gap:14px}.rdCardFooter>strong{font:400 18px/1.1 Georgia}.rdCardFooter .rdOpen{margin:0;font-size:8px}.rdServiceBackdrop{position:fixed;inset:0;z-index:99;background:rgba(33,23,28,.72);backdrop-filter:blur(5px);padding:5vh 5vw;display:grid;place-items:center;animation:rdBackdropIn .25s ease}@keyframes rdBackdropIn{from{opacity:0}to{opacity:1}}.rdServiceBackdrop .rdServiceModal{position:relative;inset:auto;width:min(1180px,100%);height:min(88vh,920px);border-radius:28px;padding:clamp(35px,5vw,70px);box-shadow:0 40px 100px rgba(0,0,0,.38)}.rdServiceBackdrop .rdModalClose{position:absolute;right:20px;top:18px;width:40px;height:40px;font-size:22px}.rdServiceBackdrop .rdModalIntro{position:static}.rdServiceBackdrop .rdModalIntro h2{font-size:clamp(48px,6vw,90px)}.rdServiceBackdrop .rdOfferGrid article{min-height:420px}.rdServiceBackdrop .rdModalGallery div{height:300px}
+@media(max-width:800px){.rdServiceHead{align-items:flex-start}.rdServiceBackdrop{padding:3vh 12px}.rdServiceBackdrop .rdServiceModal{height:94vh;border-radius:20px;padding:70px 22px 35px}.rdServiceBackdrop .rdModalGallery div{height:230px}}
+
+/* Compact service cards: keep the price connected to the description. */
+.rdServiceTrack{padding-top:48px;padding-bottom:48px}
+.rdServiceCard{min-height:410px;padding:18px 22px 20px}
+.rdCardVisual{height:112px;margin:14px 0}
+.rdCardVisual b{font-size:88px}
+.rdServiceCard h3{font-size:27px;margin:2px 0 8px}
+.rdServiceCard>p{line-height:1.5}
+.rdCardFooter{margin-top:15px;padding-top:14px}
+@media(max-width:800px){.rdServiceTrack{padding-top:38px;padding-bottom:38px}.rdServiceCard{min-height:390px}}

@@ -1,0 +1,3 @@
+import type {Metadata} from 'next';import './globals.css';import './site.css';import './palette.css';import './hero-reference.css';import './redesign.css';import './brand-palette.css';import './service-carousel.css';import './service-experience.css';import './service-polish.css';import './energy-pop.css';import './professional-polish.css';import './contact-refinement.css';import './custom-hero.css';
+export const metadata:Metadata={title:'Giovanna — Designer multidisciplinar',description:'Branding, web design, social media, editorial e embalagens com estratégia e expressão.'};
+export default function RootLayout({children}:Readonly<{children:React.ReactNode}>){return <html lang="pt-BR"><body>{children}</body></html>}

@@ -1,0 +1,45 @@
+.rd {
+  --bg: #f6f0e8;
+  --dark: #21171c;
+  --pink: #d8b7ae;
+  --coral: #b64663;
+  --burgundy: #661f3b;
+  --lilac: #c99b95;
+  --ink: #21171c;
+}
+
+.rdHero {
+  background: #21171c;
+}
+
+.rdHeroTexture {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(102, 31, 59, .48), transparent 38%),
+    repeating-linear-gradient(110deg, transparent 0 12px, rgba(246, 240, 232, .012) 13px 14px);
+}
+
+.rdPhoto,
+.rdWork.w4 > div {
+  background: #d8b7ae;
+}
+
+.rdPlans,
+.rdQuote,
+.rdFooter,
+.rdHeader {
+  background: #21171c;
+}
+
+.rdPlan.coral,
+.rdWhyVisual,
+.rdContact button {
+  background: #b64663;
+}
+
+.rdPlan.lilac {
+  background: #c99b95;
+}
+
+.rdContact {
+  background: #661f3b;
+}
