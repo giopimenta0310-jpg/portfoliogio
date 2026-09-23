@@ -4,16 +4,16 @@ import {FormEvent,useRef,useState} from 'react';
 const makeProjects=(folder:string,count:number)=>Array.from({length:count},(_,index)=>({image:`/portfolio/${folder}/${String(index+1).padStart(2,'0')}.jpg`,alt:`Projeto selecionado de ${folder.replace('-',' ')}`}));
 const services=[
  {title:'Branding + Identidade',price:'a partir de R$ 1.800',summary:'Estratégia e expressão visual para dar clareza e personalidade ao que você quer apresentar.',work:'estratégia · identidade · aplicações',cover:'/portfolio/branding/01.jpg',projects:makeProjects('branding',5)},
- {title:'Social Media',price:'de R$ 390 a R$ 2.500/mês',summary:'Conteúdo e direção visual para comunicar com presença, ritmo e consistência.',work:'direção · conteúdo · campanhas',cover:'/portfolio/social-media/03.jpg',projects:makeProjects('social-media',10)},
+ {title:'Social Media',price:'de R$ 350 a R$ 1.800/mês',summary:'Conteúdo e direção visual para comunicar com presença, ritmo e consistência.',work:'direção · conteúdo · campanhas',cover:'/portfolio/social-media/03.jpg',projects:makeProjects('social-media',10)},
  {title:'Web Design',price:'a partir de R$ 3.000',summary:'Landing pages e sites pensados para apresentar ideias, serviços e projetos com clareza.',work:'landing pages · sites · responsividade',cover:'/portfolio/web-design/02.jpg',projects:makeProjects('web-design',6)},
  {title:'Design Editorial',price:'a partir de R$ 400',summary:'Projeto gráfico para histórias, publicações e materiais que pedem uma leitura bem construída.',work:'capas · spreads · publicações',cover:'/portfolio/editorial/04.jpg',projects:makeProjects('editorial',4)},
  {title:'Embalagens',price:'a partir de R$ 900',summary:'Soluções visuais para produtos, presentes e experiências que ganham forma.',work:'produto · linha · mockups',cover:'/portfolio/embalagens/01.jpg',projects:makeProjects('embalagens',2)}
 ];
 const socialOffers=[
- {title:'Diagnóstico',price:'R$ 390',text:'Uma leitura estratégica para entender o cenário atual e enxergar os próximos passos com clareza.'},
- {title:'Diagnóstico + Enxoval',price:'R$ 790',text:'Organização do perfil, direção visual e uma base de conteúdo para começar com mais consistência.'},
- {title:'Estruturação Completa',price:'R$ 1.500',text:'Estratégia, identidade para as redes e conteúdo inicial reunidos em uma presença bem estruturada.'},
- {title:'Operação Recorrente',price:'R$ 2.500/mês',text:'Planejamento e produção mensal para manter a comunicação ativa, coerente e interessante.'}
+ {title:'Diagnóstico',price:'R$ 350',text:'Uma leitura estratégica para entender o cenário atual e enxergar os próximos passos com clareza.'},
+ {title:'Diagnóstico + Enxoval',price:'R$ 650',text:'Organização do perfil, direção visual e uma base de conteúdo para começar com mais consistência.'},
+ {title:'Estruturação Completa',price:'R$ 1.200',text:'Estratégia, identidade para as redes e conteúdo inicial reunidos em uma presença bem estruturada.'},
+ {title:'Operação Recorrente',price:'R$ 1.800/mês',text:'Planejamento e produção mensal para manter a comunicação ativa, coerente e interessante.'}
 ];
 
 export default function Home(){
